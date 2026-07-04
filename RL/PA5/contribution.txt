@@ -1,0 +1,29 @@
+Reinforcement Learning
+Programming Assignment - 5
+REPORT
+
+Team-04
+
+Team Members:
+• K Sai Bharat Kumar Varma - SE22UCSE125
+• Dev M Bandhiya - SE22UCSE078
+• G Aditya Vardhan - SE22UCSE092
+• K Harpith Rao - SE22UCSE141
+
+
+Contributions:
+
+K Sai Bharat Kumar Varma (SE22UCSE125): 
+Section-4:  Modified training1.py to implement the DQN algorithm using Stable Baselines3 for the LunarLander-v2 environment. Replaced the PPO agent with DQN and tuned key parameters like buffer_size, train_freq, batch_size, target_update_interval, tau, and learning_starts. Customized the policy network using policy_kwargs with two hidden layers. Trained and saved the model, then evaluated it by rendering the environment to visualize agent performance. 
+Section-6: Modified training3.py to train a DQN agent using Stable Baselines3 on the custom RobotNavigationEnv. Defined a custom policy network with two hidden layers via policy_kwargs and tuned key hyperparameters like buffer_size, learning_rate, batch_size, train_freq, tau, and exploration settings. Added a custom callback for logging, periodic evaluation, and saving models. Trained the agent for 2 million timesteps and saved the final model. 
+Dev M Bandhiya (SE22UCSE078) 
+Section-5:  Modified training2.py to apply reward shaping in MountainCar-v0 using a custom Gymnasium wrapper. Created a shaped reward as a weighted sum of position, velocity, and energy to improve learning in a sparse reward setting. Reused DQN setup with tuned hyperparameters and a custom policy. Trained on the modified environment while evaluating with the original rewards. Saved the final model and logged performance. 
+Section-7:  Modified training3.py to implement a hierarchical robot navigation system using Gymnasium wrappers and TD3. Created ModifiedRobotNavigationEnv to convert discrete control into continuous intermediate-goal planning. Used a rule-based policy to reach each goal in H steps. Shaped rewards using Euclidean distance, penalties for collisions, and success bonuses. Trained with a custom callback to log and save the best model, improving convergence by separating planning from control.
+
+G Aditya Vardhan (SE22UCSE092): 
+Section-5:  Modified training2.py to apply reward shaping in MountainCar-v0 using a custom Gymnasium wrapper. Created a shaped reward as a weighted sum of position, velocity, and energy to improve learning in a sparse reward setting. Reused DQN setup with tuned hyperparameters and a custom policy. Trained on the modified environment while evaluating with the original rewards. Saved the final model and logged performance. 
+Section-7:  Modified training3.py to implement a hierarchical robot navigation system using Gymnasium wrappers and TD3. Created ModifiedRobotNavigationEnv to convert discrete control into continuous intermediate-goal planning. Used a rule-based policy to reach each goal in H steps. Shaped rewards using Euclidean distance, penalties for collisions, and success bonuses. Trained with a custom callback to log and save the best model, improving convergence by separating planning from control.
+
+K Harpith Rao (SE22UCSE141)
+Section-4:  Modified training1.py to implement the DQN algorithm using Stable Baselines3 for the LunarLander-v2 environment. Replaced the PPO agent with DQN and tuned key parameters like buffer_size, train_freq, batch_size, target_update_interval, tau, and learning_starts. Customized the policy network using policy_kwargs with two hidden layers. Trained and saved the model, then evaluated it by rendering the environment to visualize agent performance. 
+Section-6: Modified training3.py to train a DQN agent using Stable Baselines3 on the custom RobotNavigationEnv. Defined a custom policy network with two hidden layers via policy_kwargs and tuned key hyperparameters like buffer_size, learning_rate, batch_size, train_freq, tau, and exploration settings. Added a custom callback for logging, periodic evaluation, and saving models. Trained the agent for 2 million timesteps and saved the final model. 
